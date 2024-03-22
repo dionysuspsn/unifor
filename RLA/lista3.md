@@ -169,7 +169,8 @@ Por exemplo, para a sequência {12, 17, 4, -6, 8, 0}, o seu programa deve escrev
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A([INICIO]) --> B{{"Digite a quantidade de números"}}
+B --> C[\n\]
 ```
 
 #### Pseudocódigo (1.0 ponto)
