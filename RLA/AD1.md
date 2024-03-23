@@ -299,6 +299,19 @@ I --LOOP--> E
 ```
 Algoritmo SomaSerie
 INICIO
+ESCREVA "Digite o número de termos da série S: "
+DECLARE n INTEIRO
+DECLARE S = 0
+DECLARE i = 0 ATE n PASSO 1
+PARA i > n
+	ESCREVA "Soma da série S é " S"
+	FIM_PARA
+PARA i = 0, 1, 2, 3, ... n
+	DECLARE numerador = 2 * i + 1
+	DECLARE denominador = 2 * i + 2
+	DECLARE termo = numerador / denominador
+	DECLARE S += termo
+	REPITA_PARA
 ...
 FIM
 ```
