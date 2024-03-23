@@ -360,6 +360,17 @@ H --> I
 ```
 Algoritmo CalcFatorial
 INICIO
+ESCREVA "Digite um número inteiro não negativo: "
+DECLARE n INTEIRO
+SE n >= 0
+	DECLARE fator = 1
+	DECLARE i = 1
+	DECLARE i = 1 ATE n PASSO 1
+	QUANDO i > n
+		ESCREVA "O fatorial de" n "é: " fator
+	QUANDO i =1, 2, 3, 4, ... n
+		DECLARE  fator = fator * 1
+	REPITA_QUANDO
 ...
 FIM
 ```
