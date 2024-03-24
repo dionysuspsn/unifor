@@ -305,7 +305,7 @@ DECLARE S = 0
 DECLARE i = 0 ATE n PASSO 1
 PARA i > n
 	ESCREVA "Soma da série S é " S"
-	FIM_PARA
+	FIM_Algoritmo_SomaSerie
 PARA i = 0, 1, 2, 3, ... n
 	DECLARE numerador = 2 * i + 1
 	DECLARE denominador = 2 * i + 2
@@ -368,9 +368,13 @@ SE n >= 0
 	DECLARE i = 1 ATE n PASSO 1
 	QUANDO i > n
 		ESCREVA "O fatorial de" n "é: " fator
+	FIM_Algoritmo_CalcFATORIAL
 	QUANDO i =1, 2, 3, 4, ... n
 		DECLARE  fator = fator * 1
 	REPITA_QUANDO
+SENAO
+	ESCREVA "O número deve ser maior ou igual à zero!"
+FIM_Algoritmo_CalcFatorial
 ...
 FIM
 ```
