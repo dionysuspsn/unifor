@@ -303,6 +303,7 @@ ESCREVA "Digite o número de termos da série S: "
 DECLARE n INTEIRO
 DECLARE S = 0
 DECLARE i = 0 ATE n PASSO 1
+LEIA i
 PARA i > n
 	ESCREVA "Soma da série S é " S"
 	FIM_Algoritmo_SomaSerie
@@ -312,6 +313,7 @@ PARA i = 0, 1, 2, 3, ... n
 	DECLARE termo = numerador / denominador
 	DECLARE S += termo
 	REPITA_PARA
+FIM_Algoritmo_SomaSerie
 ...
 FIM
 ```
@@ -423,6 +425,20 @@ I --LOOP--> E
 ```
 Algoritmo GeraFibonacci
 INICIO
+ESCREVA "Digite o número de termos desejado"
+DECLARE a = 0
+DECLARE b = 1
+DECLARE i = 1 ATÉ n PASSO 1 
+PARA i > n
+	FIM_Algoritmo_GeraFibonacci
+PARA i = 1, 2, 3, ..., n
+	ESCREVA a
+	DECLARE termo_atual = a + b
+	DECLARE a = b
+	DECLARE b = termo_atual
+	REPITA_PARA
+FIM_Algoritmo_GeraFibonacci
+	
 ...
 FIM
 ```
