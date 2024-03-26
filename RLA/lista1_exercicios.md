@@ -60,7 +60,18 @@ Sabe-se que os funcionários que recebem atualmente salário de até R$ 500 ter�
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+    A(INICIO) --> 
+    B{{"Digite o salario": }} -->
+    C[/salario/] -->
+    D{salario <= 500 } --SIM--> E
+    E[novo_salario = salario * 1,2] --> F
+    F{{"O novo salario é:" novo_salario}} 
+    F --> G(FIM)
+    D --NAO--> H[novo_salario = salario * 1,1]
+    H --> I{{O novo salario é: novo_salario}} 
+    I --> G 
+
+
 ```
 
 #### Pseudocódigo (1.0 ponto)
