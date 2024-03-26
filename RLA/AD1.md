@@ -490,6 +490,21 @@ E --> W
 ```
 Algoritmo InverteInteiro
 INICIO
+ESCREVA "Digite um número inteiro: "
+DECLARE num INTEIRO
+SE num >= 0
+	DECLARE num_inv = 0
+	SE num > 0
+		DECLARE digito = num % 10
+		DECLARE num_inv = num_inv * 10 + digito
+		DECLARE numero = numero // 10
+		REPITA_SE
+	SENAO
+		DIGITE "Número invertido: ", numero_inv
+		FIM_Algoritmo_InverteInteiro
+SENAO
+	DIGITE "O número deve ser positivo!"
+	FIM_Algoritmo_InverteInteiro	
 ...
 FIM
 ```
