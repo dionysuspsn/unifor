@@ -78,6 +78,17 @@ flowchart TD
 
 ```
 Algoritmo ContaAprovacoes
+DECLARE salario , novo_salario REAIS
+INICIO
+ESCREVA "Digite o salário: "
+LEIA salario
+SE salario <= 500 ENTAO
+    novo_salario = salario * 1,2
+    ESCREVA "O novo salário é: " novo_salario
+    FIM_ALGORITMO
+SENAO
+    novo_salario = salario * 1,1
+    ESCREVA "O novo salário é: " novo_salario
 FIM_ALGORITMO
 ```
 
