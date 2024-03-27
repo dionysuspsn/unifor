@@ -89,7 +89,7 @@ SE salario <= 500 ENTAO
 SENAO
     novo_salario = salario * 1,1
     ESCREVA "O novo salário é: " novo_salario
-FIM_ALGORITMO
+    FIM_ALGORITMO
 ```
 
 #### Teste de mesa (1.0 ponto)
@@ -106,7 +106,16 @@ Represente, em fluxograma e pseudocódigo, um algoritmo para calcular a média a
 
 ```mermaid
 flowchart TD
-A([INICIO]) --> B([FIM])
+A(INICIO) --> B{{Digite a primeira nota: }}
+    B --> C[/nota 1/]
+    C --> D{{Digite a segunda nota: }}
+    D --> E[/nota 2/]
+    E --> F[media = nota 1 + nota 2 / 2 ]
+    F --> G{media >= 5}
+    G --SIM--> H{{Aprovado}}
+    H --> I(FIM)
+    G --NAO--> J{{Reprovado}}
+    J --> I
 ```
 
 #### Pseudocódigo (1 ponto)
